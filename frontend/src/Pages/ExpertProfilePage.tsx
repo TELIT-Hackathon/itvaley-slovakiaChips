@@ -35,7 +35,6 @@ function ExpertProfilePage() {
             <Box sx={{alignSelf:'center',width:300}}>
             </Box>
             <Stack spacing={3}>
-                {/*<Main></Main>*/}
                 <Box sx={{alignSelf:'center'}}>
                     <ExpertProfile></ExpertProfile>
                 </Box>

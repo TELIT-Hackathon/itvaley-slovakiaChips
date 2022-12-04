@@ -21,10 +21,8 @@ function MainPage() {
                 fontSize:50,
                 color: '#ece3e3',
 
-            }}>Learn, teach, help others
+            }}>Welcome back!
             </Typography>
-            <Register></Register>
-            <Login></Login>
             <Box
                 component="img"
                 sx={{

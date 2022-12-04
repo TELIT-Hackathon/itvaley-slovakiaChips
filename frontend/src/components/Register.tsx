@@ -9,6 +9,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Typography from "@mui/material/Typography";
 import LoginWithoutButton from "./LoginWithoutButton";
 import {Divider} from "@mui/material";
+import {Link} from "react-router-dom";
 // import {Link} from "react-router-dom";
 
 export default function Register() {
@@ -66,7 +67,7 @@ export default function Register() {
                                fullWidth/>
                 </DialogContent>
                 <DialogActions>
-                    {/*<Link to='/Home'>*/}
+                    <Link to='/Main'>
                     <Button onClick={handleClose} color={"primary"} variant={"contained"} sx={{
                         textAlign: 'left',
                         position: 'absolute',
@@ -79,7 +80,7 @@ export default function Register() {
                         backgroundColor: '#0584e8',
 
                     }}>Register</Button>
-                    {/*</Link>*/}
+                    </Link>
                 </DialogActions>
                 <br></br>
                 <Typography sx={{textAlign: 'center',}}>Already have an Account

@@ -13,6 +13,7 @@ import Ratingg from "./Ratingg";
 import Box from "@mui/material/Box";
 import SendIcon from '@mui/icons-material/Send';
 import Chat from "./Chat";
+import cindy from "../images/imag.jpg";
 
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#ffffff' : '#3493d2',
@@ -27,11 +28,11 @@ const Item = styled(Paper)(({theme}) => ({
 export default function ExpertProfile() {
     return (
         <Card sx={{maxWidth: 345}}>
-            <Avatar sx={{top: 10, left: 100, width: 150, height: 150}}></Avatar>
+            <Avatar src={cindy} sx={{top: 10, left: 100, width: 150, height: 150}}></Avatar>
             <br/>
             <CardContent>
                 <Typography align={"center"} gutterBottom variant="h5" component="div">
-                    Greg Gorlen
+                    Cindy Baker
                 </Typography>
                     <Typography align={"center"} sx={{backgroundColor:'lightblue', padding:1}}>Expert</Typography>
                 <br/>

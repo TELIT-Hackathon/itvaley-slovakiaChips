@@ -6,28 +6,36 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import {Grid, Paper} from '@mui/material';
+import {Button, Grid, Paper} from '@mui/material';
 import Box from "@mui/material/Box";
 import StarRateIcon from '@mui/icons-material/StarRate';
+import c from "../images/c.png";
+import im from "../images/images.jpg";
+import im1 from "../images/imag.jpg";
+import arr from "../images/arrow.png";
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import {Link} from "react-router-dom";
+
 
 export default function ListExperts() {
     return (
         <List sx={{ width: '100%', maxWidth: 360, maxHeight: 360, bgcolor: 'background.paper' }}>
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="John Kon" src={c} />
                 </ListItemAvatar>
                 <ListItemText
                     primary="John Kon"
                     secondary={
                         <React.Fragment>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
                             <Typography
                                 sx={{ display: 'inline' }}
                                 component="span"
                                 variant="body2"
                                 color="text.primary"
                             >
-                                About me: I like oranges.
+                                Senior developer
                             </Typography>
                         </React.Fragment>
                     }
@@ -39,18 +47,19 @@ export default function ListExperts() {
                     <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
                 </ListItemAvatar>
                 <ListItemText
-                    primary="Summer BBQ"
+                    primary="Travis Howard"
                     secondary={
                         <React.Fragment>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
                             <Typography
                                 sx={{ display: 'inline' }}
                                 component="span"
                                 variant="body2"
                                 color="text.primary"
                             >
-                                to Scott, Alex, Jennifer
+                                Java enthusiast
                             </Typography>
-                            {" — Wish I could come, but I'm out of town this…"}
+                            {"— Full-stack applications"}
                         </React.Fragment>
                     }
                 />
@@ -58,63 +67,90 @@ export default function ListExperts() {
             <Divider variant="inset" component="li" />
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+                    <Avatar alt="Cindy Baker" src={im1} />
                 </ListItemAvatar>
                 <ListItemText
-                    primary="Oui Oui"
+                    primary="Cindy Baker"
                     secondary={
                         <React.Fragment>
+                            <Link to={"/ExpertProfile"}>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
+                            </Link>
                             <Typography
                                 sx={{ display: 'inline' }}
                                 component="span"
                                 variant="body2"
                                 color="text.primary"
                             >
-                                Sandra Adams
+                                Java developer
                             </Typography>
-                            {' — Do you have Paris recommendations? Have you ever…'}
+                            {'— I will learn you basis'}
                         </React.Fragment>
                     }
                 />
             </ListItem>
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="Tim Fisher" src={im} />
                 </ListItemAvatar>
                 <ListItemText
-                    primary="Brunch this weekend?"
+                    primary="Tim Fisher"
                     secondary={
                         <React.Fragment>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
                             <Typography
                                 sx={{ display: 'inline' }}
                                 component="span"
                                 variant="body2"
                                 color="text.primary"
                             >
-                                Ali Connors
+                                Senior
                             </Typography>
-                            {" — I'll be in your neighborhood doing errands this…"}
+                            {""}
                         </React.Fragment>
                     }
                 />
             </ListItem>
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="Greg Gorlen" src="/static/images/avatar/1.jpg" />
                 </ListItemAvatar>
                 <ListItemText
-                    primary="Brunch this weekend?"
+                    primary="Greg Gorlen"
                     secondary={
                         <React.Fragment>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
                             <Typography
                                 sx={{ display: 'inline' }}
                                 component="span"
                                 variant="body2"
                                 color="text.primary"
                             >
-                                Ali Connors
+                                Manager
                             </Typography>
-                            {" — I'll be in your neighborhood doing errands this…"}
+                            {""}
+                        </React.Fragment>
+                    }
+                />
+            </ListItem>
+            <ListItem alignItems="flex-start">
+                <ListItemAvatar>
+                    <Avatar alt="Mike" src="/static/images/avatar/1.jpg" />
+                </ListItemAvatar>
+                <ListItemText
+                    primary="Mike Bickar"
+                    secondary={
+                        <React.Fragment>
+                            <Button sx={{position:'absolute',right:-10, bottom:20}}><img src={arr}/></Button>
+                            <Typography
+                                sx={{ display: 'inline' }}
+                                component="span"
+                                variant="body2"
+                                color="text.primary"
+                            >
+                                Software engineer
+                            </Typography>
+                            {""}
                         </React.Fragment>
                     }
                 />

@@ -8,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Typography from "@mui/material/Typography";
 import LoginWithoutButton from "./LoginWithoutButton";
+import {Link} from "react-router-dom";
 
 export default function RegisterWithoutButton() {
     const [open, setOpen] = React.useState(false);
@@ -52,7 +53,7 @@ export default function RegisterWithoutButton() {
                                fullWidth/>
                 </DialogContent>
                 <DialogActions>
-                    {/*<Link to='/Home'>*/}
+                    <Link to='/Main'>
                     <Button onClick={handleClose} color={"primary"} variant={"contained"} sx={{
                         textAlign: 'left',
                         position: 'absolute',
@@ -62,10 +63,10 @@ export default function RegisterWithoutButton() {
                         left: 10,
                         top: 460,
                         color: '#ffffff',
-                        backgroundColor: '#000000',
+                        backgroundColor: '#0584e8',
 
                     }}>Register</Button>
-                    {/*</Link>*/}
+                    </Link>
                 </DialogActions>
                 <br></br>
                 <Typography onClick={handleClose}  sx={{textAlign: 'center',}}>Already have an Account

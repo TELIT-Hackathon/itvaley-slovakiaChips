@@ -20,6 +20,7 @@ import Avatar from "@mui/material/Avatar";
 import Dialog from "@mui/material/Dialog";
 import Button from "@mui/material/Button";
 import * as React from "react";
+import cindy from "../images/imag.jpg";
 
 export default function Chat(){
 
@@ -45,9 +46,9 @@ export default function Chat(){
                 <Paper elevation={5}>
                     <Box p={3}>
                         <Stack direction="row" spacing={2}>
-                        <Avatar></Avatar>
+                        <Avatar src={cindy}></Avatar>
                         <Typography variant="h4" gutterBottom>
-                            Greg
+                            Cindy Baker
                         </Typography>
                         </Stack>
                         <br/>

@@ -3,6 +3,7 @@ import HomePage from "./Homepage";
 import MainPage from "./MainPage";
 import CatalogPage from "./CatalogPage";
 import ExpertsPage from "./ExpertsPage";
+import ExpertProfilePage from "./ExpertProfilePage";
 
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
             <Route path="Main" element={<MainPage/>}/>
             <Route path="Catalog" element={<CatalogPage/>}/>
             <Route path="Experts" element={<ExpertsPage/>}/>
+            <Route path="ExpertProfile" element={<ExpertProfilePage/>}/>
         </Routes>
     );
 }
