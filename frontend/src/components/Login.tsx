@@ -53,6 +53,7 @@ export default function Login() {
                     <TextField variant="outlined" id="full-width-text-field"
                                label="Password"
                                margin="normal"
+                               type="password"
                                fullWidth/>
                 </DialogContent>
                 <DialogActions>

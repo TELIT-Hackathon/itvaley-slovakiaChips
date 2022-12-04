@@ -116,6 +116,7 @@ export default function AppBarr() {
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Messages></Messages>
                        <Notification></Notification>
+                        <Link to={"/MyProfile"} style={{ textDecoration: 'none',color:'white' }}>
                         <IconButton
                             size="large"
                             edge="end"
@@ -127,6 +128,7 @@ export default function AppBarr() {
                         >
                             <AccountCircle />
                         </IconButton>
+                        </Link>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton

@@ -4,6 +4,7 @@ import MainPage from "./MainPage";
 import CatalogPage from "./CatalogPage";
 import ExpertsPage from "./ExpertsPage";
 import ExpertProfilePage from "./ExpertProfilePage";
+import MyProfilePage from "./MyProfilePage";
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
             <Route path="Catalog" element={<CatalogPage/>}/>
             <Route path="Experts" element={<ExpertsPage/>}/>
             <Route path="ExpertProfile" element={<ExpertProfilePage/>}/>
+            <Route path="MyProfile" element={<MyProfilePage/>}/>
         </Routes>
     );
 }
