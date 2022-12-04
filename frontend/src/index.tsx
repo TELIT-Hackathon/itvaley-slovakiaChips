@@ -3,14 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+import Main from "./Pages/Main";
+import ExpertProfile from "./components/ExpertProfile";
+import ExpertInfo from "./components/ExpertInfo";
+import ExpertExpertize from "./components/ExpertExpertize";
+import {Stack} from "@mui/material";
+import Box from "@mui/material/Box";
+import Background from "./Background";
+import Chat from "./components/Chat";
+import AppBarr from "./components/AppBarr";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Main></Main>
+        </BrowserRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
