@@ -21,6 +21,7 @@ import {Container, Divider} from "@mui/material";
 import {Link} from "react-router-dom";
 import Notification from "./Notification";
 import Messages from "./Messages";
+import {Logout} from "@mui/icons-material";
 
 
 export default function AppBarr() {
@@ -129,6 +130,19 @@ export default function AppBarr() {
                             <AccountCircle />
                         </IconButton>
                         </Link>
+                        <Link to={"/"}>
+                        <IconButton style={{ textDecoration: 'none',color:'white' }}
+                            size="large"
+                            edge="end"
+                            aria-label="account of current user"
+                            aria-controls={menuId}
+                            aria-haspopup="true"
+                            onClick={handleProfileMenuOpen}
+                            color="inherit"
+                        >
+                            <Logout/>
+                        </IconButton>
+                        </Link>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -141,6 +155,7 @@ export default function AppBarr() {
                         >
                             <MoreIcon />
                         </IconButton>
+
                     </Box>
                 </Toolbar>
             </AppBar>
